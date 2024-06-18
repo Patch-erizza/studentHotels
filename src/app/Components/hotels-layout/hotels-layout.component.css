@@ -1,0 +1,77 @@
+.hotels-layout {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 20px 100px;
+  font-family: Bahnschrift;
+}
+.search-filter-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  max-height: 200px;
+  padding: 25px 20px 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 1px rgba(101, 101, 101, 0.55);
+  overflow: hidden;
+  font-weight: 600;
+  font-size: 14px;
+  color: #353535;
+  margin-left: 20px;
+  background-color: #ffffff;
+  position: sticky;
+  top: 20px;
+}
+.filter-modal-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+.filter-modal-header > button {
+  border: none;
+  background-color: white;
+  color: #8a8a8a;
+  font-family: Bahnschrift;
+}
+button:hover {
+  cursor: pointer;
+}
+.shadow-block {
+  width: 90%;
+  box-shadow: 1px 3px 5px -1px rgba(0,0,0,0.51);
+  position: absolute;
+  margin-top: 30px;
+}
+.shadow-block > input {
+  margin-bottom: 20px;
+}
+input {
+  font-size: 12px;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  margin: 10px 2px;
+  color: #8a8a8a;
+}
+input:focus {
+  outline: none;
+  border: 1px solid rgba(100, 100, 100, 0.66);
+  background-color: #f3f3f3;
+  color: #343434;
+}
+.address-search-item {
+  margin-bottom: 20px;
+}
+.price-filter {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.price-filter > input {
+  width: 100%;
+}
+.app-hotel-list {
+  width: 70%;
+}

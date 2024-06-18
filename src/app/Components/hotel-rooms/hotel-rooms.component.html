@@ -1,0 +1,38 @@
+<div class="hotel-rooms" *ngFor="let room of hotelRooms">
+  <div class="one-room-info">
+
+    <div class="room-no-price-info">
+      <div *ngIf="room.imageUrl else imgPlaceholderBlock">
+        <img class="hotel-room-img" [src]="room.imageUrl">
+      </div>
+      <ng-template #imgPlaceholderBlock>
+        <img class="hotel-room-img" [src]="'https://www.svgrepo.com/show/508699/landscape-placeholder.svg'"/>
+      </ng-template>
+
+      <div class="room-description">
+        <div class="room-title">{{room.title}}</div>
+
+          <p class="rate-title">{{room.rateTitle}}</p>
+
+            <div *ngIf="room.mealTitle else noMealTitle">
+              <p class="meal-title">Питание: {{room.mealTitle}}</p>
+            </div>
+            <ng-template class="rate-title" #noMealTitle>Без питания</ng-template>
+
+          <p class="beds-title">Дополнительные места: {{room.extraBeds}}</p>
+
+      </div>
+    </div>
+
+    <div class="room-remained-and-price">
+      <div *ngIf="room.roomsRemained else roomRemainedUndefined">
+        <p class="room-remained">Доступно {{room.roomsRemained}} номеров</p>
+      </div>
+      <ng-template #roomRemainedUndefined>
+        <p class="room-remained">Доступно номеров: нет информации</p>
+      </ng-template>
+      <p class="room-price">{{room.priceInRub}} ₽</p>
+    </div>
+
+  </div>
+</div>

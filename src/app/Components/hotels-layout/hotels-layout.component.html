@@ -1,0 +1,21 @@
+<div class="hotels-layout">
+
+    <div class="search-filter-item">
+      <div class="filter-modal-header">
+        Фильтры
+        <button class="remove-button">Очистить</button>
+      </div>
+      <div class="shadow-block"></div>
+      Адрес <input class="address-search-item" type="text" [formControl]="searchQueryControl" placeholder="Начните писать..."/>
+
+      Стоимость
+      <div class="price-filter">
+        <input type="number" [formControl]="sortMinPriceControl" placeholder="0,00"/>
+        —
+        <input type="number" [formControl]="sortMaxPriceControl" placeholder="0,00"/> ₽
+      </div>
+    </div>
+
+  <app-hotel-list class="app-hotel-list" *ngIf="hotels$ | async as hotels" [hotelList]="hotels"></app-hotel-list>
+
+</div>

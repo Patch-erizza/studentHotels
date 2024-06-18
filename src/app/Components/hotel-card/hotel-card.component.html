@@ -1,0 +1,19 @@
+<div class="hotel-card">
+
+  <div class="hotel-card-header-color">
+    <div class="hotel-card-header">
+
+      <div class="hotel-card-description">
+        <p class="hotel-card-title">{{hotel.hotelTitle}}</p>
+        <p class="hotel-card-address">{{hotel.address}}</p>
+        <p class="hotel-card-city-center-distance">{{hotel.cityCentreDistance}}</p>
+      </div>
+      <p class="hotel-card-image" *ngIf="hotel.imageUrl">
+        <img [src]="hotel.imageUrl" [alt]="hotel.hotelTitle">
+      </p>
+
+    </div>
+  </div>
+
+  <app-hotel-rooms class="hotel-rooms-list" *ngIf="hotel.offers.slice(0, 5) as rooms" [hotelRooms]="rooms"></app-hotel-rooms>
+</div>
