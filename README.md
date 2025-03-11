@@ -1,27 +1,52 @@
-# StudentHotels
+Учебное приложение для поиска доступных отелей для бронирования с фильтрацией по адресу и стоимости номеров. Так же отображается информация о доступных номерах, завтраке, расстоянии до центра города
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+## Обзор проекта
+Этот проект был создан с помощью Angular CLI версии 17.1.2.
 
-## Development server
+## Технологии
+- Node.js (рекомендуется LTS версия)
+- npm (поставляется вместе с Node.js)
+- Angular CLI (`npm install -g @angular/cli`)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Структура проекта
 
-## Code scaffolding
+```
+src/
+├── app/
+│   ├── Components/   
+│   ├── models/         
+│   ├── services/      
+│   └── utils/          
+├── assets/            
+└── styles.css         
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Начало работы
+1. Клонируем репозиторий
+2. Устанавливаем зависимости:
+   ```bash
+   npm install
+   ```
+3. Запускаем сервер разработки:
+   ```bash
+   npm start
+   ```
+4. Запускаем JSON сервер:
+   ```bash
+   npm run start-json-server
+   ```
+   Посмотреть приложение можно будет по адресу http://localhost:4200/
+   
+## Разработка
 
-## Build
+### Сервер разработки
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Создание компонентов
 
-## Running unit tests
+### Сборка
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Запуск модульных тестов
 
-## Running end-to-end tests
+## Дополнительная помощь
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Для получения дополнительной помощи по Angular CLI используйте `ng help` или посетите страницу [Angular CLI Overview and Command Reference](https://angular.io/cli).
